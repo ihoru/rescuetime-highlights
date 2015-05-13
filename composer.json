@@ -1,0 +1,16 @@
+{
+    "name": "ihoru/rescuetime-highlights",
+    "description": "Tool for adding daily highlights to RescueTime with labels",
+    "require": {
+        "php": ">=5.4",
+        "mikecao/flight": "^1.2",
+        "twig/twig": "^1.18"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ihoru",
+            "email": "ihor.polyakov@gmail.com"
+        }
+    ]
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	{% block head %}
+	<title>{% block title %}{% endblock %} - RescueTime Highlights</title>
+	{% endblock %}
+	<base href="{{ base_url }}" />
+	<meta name="author" content="" />
+	<meta name="description" content="" />
+	<link rel="icon" href="/favicon.ico" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+	<!--<link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css" />-->
+	<!--<link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap-theme.min.css" />-->
+	<link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">RescueTime Highlights</a>
+		</div>
+		<div id="navbar" class="collapse navbar-collapse">
+			<ul class="nav navbar-nav">
+				<li{% if page == 'home' %} class="active"{% endif %}><a href="/">Home</a></li>
+				<li{% if page == 'about' %} class="active"{% endif %}><a href="/about">About</a></li>
+				{#<li{% if page == 'contact' %} class="active"{% endif %}><a href="/contact">Contact</a></li>#}
+			</ul>
+		</div><!--/.nav-collapse -->
+	</div>
+</nav>
+
+<!-- Begin page content -->
+<div class="container" id="content">
+	{% block content %}{% endblock %}
+</div>
+
+<footer class="footer">
+	<div class="container">
+		<p class="text-muted">
+			{% block footer %}
+			&copy; Copyright 2015 by <a href="https://github.com/ihoru/rescuetime-highlights">ihoru</a>.
+			{% endblock %}
+		</p>
+	</div>
+</footer>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<!--<script src="/bower_components/jquery/dist/jquery.min.js"></script>-->
+<script src="/static/scripts.js"></script>
+</body>
+</html>

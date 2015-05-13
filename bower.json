@@ -1,0 +1,26 @@
+{
+  "name": "rescuetime-highlights",
+  "version": "0.0.0",
+  "homepage": "https://github.com/ihoru/rescuetime-highlights",
+  "authors": [
+    "ihoru <ihor.polyakov@gmail.com>"
+  ],
+  "description": "Tool for adding daily highlights to RescueTime with labels",
+  "main": "index.php",
+  "keywords": [
+    "rescuetime",
+    "tool"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.4",
+    "jquery": "~2.1.4"
+  }
+}
